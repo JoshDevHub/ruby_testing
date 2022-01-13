@@ -11,4 +11,11 @@ class FindNumber
     @answer = answer.value
     @guess = guess
   end
+
+  def make_guess
+    range = (min..max)
+    len = range.size
+    sum = range.sum
+    sum / len
+  end
 end
