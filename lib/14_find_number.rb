@@ -18,4 +18,16 @@ class FindNumber
     sum = range.sum
     sum / len
   end
+
+  def game_over?
+    answer == guess
+  end
+
+  def update_range
+    if guess < answer
+      @min = guess + 1
+    elsif guess > answer
+      @max = guess - 1
+    end
+  end
 end
