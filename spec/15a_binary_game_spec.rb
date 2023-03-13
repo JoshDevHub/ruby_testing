@@ -384,8 +384,8 @@ describe BinaryGame do
 
     # Method with Outgoing Command -> Test that a message is sent
     it 'sends update_range' do
-      expect(turn_search).to receive(:update_range)
       turn_display.display_turn_order(turn_search)
+      expect(turn_search).to have_received(:update_range)
     end
 
     # Using method expectations can be confusing. Stubbing the methods above

@@ -1,3 +1,8 @@
+---
+require:
+  - rubocop-rspec
+  - rubocop-performance
+
 AllCops:
   Exclude:
     - 'Gemfile'
@@ -11,4 +16,4 @@ Layout/LineLength:
   Exclude:
     - 'spec/*'
     - 'spec_answers/*'
-  
+
